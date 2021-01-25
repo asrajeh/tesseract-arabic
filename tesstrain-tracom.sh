@@ -54,5 +54,8 @@ fi
 
 make training MODEL_NAME=$MODEL_NAME LANG_TYPE=RTL MAX_ITERATIONS=100000
 
+# lstmeval --model data/$MODEL_NAME/checkpoints/${MODEL_NAME}_checkpoint --traineddata data/$MODEL_NAME.traineddata --eval_listfile data/$MODEL_NAME/list.eval
+# Eval Char error rate=2.8750943, Word error rate=7.8370345
+
 # How to use
 # tesseract --tessdata-dir tesstrain/data -l $MODEL_NAME image_input out
